@@ -24,29 +24,29 @@ int countPair(vector<pair<int, int>> v, int chk_true, int n, int idx) {
 	return ret;
 }
 
-int main() {
-	int C; //테스트케이스 갯수
-	cin >> C;
-
-	vector<pair<int, int>> v;
-	int n, m; //학생수, 친구 쌍의 수
-	int x, y;
-	for (int i = 0; i < C; i++) {
-		cin >> n >> m;
-		for (int j = 0; j < m; j++) {
-			cin >> x >> y;
-			v.push_back(make_pair(x, y));
-		}
-
-		check.assign(n, false);
-		sort(v.begin(), v.end());
-		cout<<countPair(v, 0, n, 0)<<endl;
-		check.clear();
-		v.clear();
-	}
-
-	return 0;
-}
+//int main() {
+//	int C; //테스트케이스 갯수
+//	cin >> C;
+//
+//	vector<pair<int, int>> v;
+//	int n, m; //학생수, 친구 쌍의 수
+//	int x, y;
+//	for (int i = 0; i < C; i++) {
+//		cin >> n >> m;
+//		for (int j = 0; j < m; j++) {
+//			cin >> x >> y;
+//			v.push_back(make_pair(x, y));
+//		}
+//
+//		check.assign(n, false);
+//		sort(v.begin(), v.end());
+//		cout<<countPair(v, 0, n, 0)<<endl;
+//		check.clear();
+//		v.clear();
+//	}
+//
+//	return 0;
+//}
 
 /*
 입력
